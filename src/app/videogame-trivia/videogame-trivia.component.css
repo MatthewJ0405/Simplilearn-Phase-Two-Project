@@ -85,7 +85,6 @@ span {
   }
 }
 
-
 /*
  * Cover
  */
@@ -100,12 +99,8 @@ span {
 .space {
   margin: 20px;
 }
-.left {
-  position: absolute;
-  top: 70px;
-  left: 350px;
-  width: 200px;
-  padding: 10px;
+.negative {
+  margin-top: -120px;
 }
 .answer {
   background-color: #6d6d6d;

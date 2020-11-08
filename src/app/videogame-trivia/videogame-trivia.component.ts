@@ -24,16 +24,13 @@ export class VideogameTriviaComponent implements OnInit {
 
   startQuiz(quizTitle: string) {
     this.triviaService.getQuiz(quizTitle).subscribe(res => {
-      console.log(res);
       this.quiz = new Quiz(res);
     });
     this.section = 'trivia';
   }
 
   selectAnswer(questions: Questions, answers: Answers) {
-    console.log("In selectAnswer");
     questions.answers.forEach((a) => {
-      console.log(a.selected);
       if (a.id !== answers.id) {
         a.selected = false;
       }
@@ -41,10 +38,6 @@ export class VideogameTriviaComponent implements OnInit {
   }
 
   checkAnswer(questions: Questions) {
-    console.log(questions.answers.forEach((a) => {
-      console.log(a.selected);
-      //console.log(a.correct);
-    }))
     return questions.answers.every(a => a.selected === a.correct) ? 'correct' : 'incorrect';
   }
 
@@ -59,7 +52,6 @@ export class VideogameTriviaComponent implements OnInit {
       'Question ID': f.id,
       'Answered': f.answered
     }))
-    console.log(this.quiz.questions);
     this.section = 'end';
   }
 

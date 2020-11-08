@@ -17,7 +17,7 @@
         </div>
         <div id="trivia">
             <div class="inner cover" *ngIf="section=='trivia'">
-                <button class="btn btn-lg btn-secondary left" (click)="goBack()">Go Back</button>
+                <button class="btn btn-lg btn-secondary negative" (click)="goBack()">Go Back</button>
                 <div class="space" *ngFor="let q of quiz.questions; index as i">
                     <h3>{{i+1}}. {{q.question}}</h3>
                     <div class="row text-left answers">
@@ -33,7 +33,7 @@
         </div>
         <div id="end">
             <div class="inner cover" *ngIf="section=='end'">
-                <button class="btn btn-lg btn-secondary left" (click)="goBack()">Go Back</button>
+                <button class="btn btn-lg btn-secondary negative" (click)="goBack()">Go Back</button>
                 <h3>Trivia Results</h3>
                 <div *ngFor="let question of quiz.questions; index as i">
                     <div>
