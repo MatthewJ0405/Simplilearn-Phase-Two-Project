@@ -1,0 +1,306 @@
+{
+    "id": 1,
+    "title": "Video Game Trivia",
+    "questions": [
+        {
+            "id": 100,
+            "question": "What is the date setting of the original 'Call of Duty'?",
+            "answers": [
+                {
+                    "id": 1,
+                    "questionId": 100,
+                    "answer": "World War I",
+                    "correct": false
+                },
+                {
+                    "id": 2,
+                    "questionId": 100,
+                    "answer": "World War II",
+                    "correct": true
+                },
+                {
+                    "id": 3,
+                    "questionId": 100,
+                    "answer": "American Civil War",
+                    "correct": false
+                },
+                {
+                    "id": 4,
+                    "questionId": 100,
+                    "answer": "The Revolutionary War",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": 101,
+            "question": "Which item made Mario invincible in 'Super Mario Bros.'?",
+            "answers": [
+                {
+                    "id": 1,
+                    "questionId": 101,
+                    "answer": "Big Mushroom",
+                    "correct": false
+                },
+                {
+                    "id": 2,
+                    "questionId": 101,
+                    "answer": "Fire Flower",
+                    "correct": false
+                },
+                {
+                    "id": 3,
+                    "questionId": 101,
+                    "answer": "Heart",
+                    "correct": false
+                },
+                {
+                    "id": 4,
+                    "questionId": 101,
+                    "answer": "Starman",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "id": 102,
+            "question": "What does Mario jump on when he completes a level?",
+            "answers": [
+                {
+                    "id": 1,
+                    "questionId": 102,
+                    "answer": "A Flag Pole",
+                    "correct": true
+                },
+                {
+                    "id": 2,
+                    "questionId": 102,
+                    "answer": "A Castle",
+                    "correct": false
+                },
+                {
+                    "id": 3,
+                    "questionId": 102,
+                    "answer": "A Pipe",
+                    "correct": false
+                },
+                {
+                    "id": 4,
+                    "questionId": 102,
+                    "answer": "A Flower Stem",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": 103,
+            "question": "Solid Snake is a hero in which famous videogame franchise?",
+            "answers": [
+                {
+                    "id": 1,
+                    "questionId": 103,
+                    "answer": "Metal Wheel",
+                    "correct": false
+                },
+                {
+                    "id": 2,
+                    "questionId": 103,
+                    "answer": "Metal Gun",
+                    "correct": false
+                },
+                {
+                    "id": 3,
+                    "questionId": 103,
+                    "answer": "Metal Gear",
+                    "correct": true
+                },
+                {
+                    "id": 4,
+                    "questionId": 103,
+                    "answer": "Metal Box",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": 104,
+            "question": "What is the name of the final course in all 'Mario Kart' videogames?",
+            "answers": [
+                {
+                    "id": 1,
+                    "questionId": 104,
+                    "answer": "Bowser's Castle",
+                    "correct": false
+                },
+                {
+                    "id": 2,
+                    "questionId": 104,
+                    "answer": "Rainbow Ruin",
+                    "correct": false
+                },
+                {
+                    "id": 3,
+                    "questionId": 104,
+                    "answer": "Rainbow Road",
+                    "correct": true
+                },
+                {
+                    "id": 4,
+                    "questionId": 104,
+                    "answer": "Bowser's Coliseum",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": 105,
+            "question": "The original designer behind the game 'Tetris' is from which nation/country?",
+            "answers": [
+                {
+                    "id": 1,
+                    "questionId": 105,
+                    "answer": "Russia",
+                    "correct": true
+                },
+                {
+                    "id": 2,
+                    "questionId": 105,
+                    "answer": "Japan",
+                    "correct": false
+                },
+                {
+                    "id": 3,
+                    "questionId": 105,
+                    "answer": "America",
+                    "correct": false
+                },
+                {
+                    "id": 4,
+                    "questionId": 105,
+                    "answer": "China",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": 106,
+            "question": "What is the highest-grossing arcade game of all-time?",
+            "answers": [
+                {
+                    "id": 1,
+                    "questionId": 106,
+                    "answer": "Tetris",
+                    "correct": false
+                },
+                {
+                    "id": 2,
+                    "questionId": 106,
+                    "answer": "Galaga",
+                    "correct": false
+                },
+                {
+                    "id": 3,
+                    "questionId": 106,
+                    "answer": "Pac-Man",
+                    "correct": true
+                },
+                {
+                    "id": 4,
+                    "questionId": 106,
+                    "answer": "Centipede",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": 107,
+            "question": "What is the name of the woman Mario is attempting to save from the giant ape in the original Donkey Kong?",
+            "answers": [
+                {
+                    "id": 1,
+                    "questionId": 107,
+                    "answer": "Pauline",
+                    "correct": true
+                },
+                {
+                    "id": 2,
+                    "questionId": 107,
+                    "answer": "Peach",
+                    "correct": false
+                },
+                {
+                    "id": 3,
+                    "questionId": 107,
+                    "answer": "Daisy",
+                    "correct": false
+                },
+                {
+                    "id": 4,
+                    "questionId": 107,
+                    "answer": "Toadette",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": 108,
+            "question": "What color do the ghost enemies turn to once Pac-Man eats a Power Pellet?",
+            "answers": [
+                {
+                    "id": 1,
+                    "questionId": 108,
+                    "answer": "Red",
+                    "correct": false
+                },
+                {
+                    "id": 2,
+                    "questionId": 108,
+                    "answer": "Yellow",
+                    "correct": false
+                },
+                {
+                    "id": 3,
+                    "questionId": 108,
+                    "answer": "Purple",
+                    "correct": false
+                },
+                {
+                    "id": 4,
+                    "questionId": 108,
+                    "answer": "Blue",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "id": 109,
+            "question": "Nintendo began as a company selling which products?",
+            "answers": [
+                {
+                    "id": 1,
+                    "questionId": 109,
+                    "answer": "Video Game Consoles",
+                    "correct": false
+                },
+                {
+                    "id": 2,
+                    "questionId": 109,
+                    "answer": "Playing Cards",
+                    "correct": true
+                },
+                {
+                    "id": 3,
+                    "questionId": 109,
+                    "answer": "Video Games",
+                    "correct": false
+                },
+                {
+                    "id": 4,
+                    "questionId": 109,
+                    "answer": "Board Games",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}

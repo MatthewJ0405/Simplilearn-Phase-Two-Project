@@ -1,0 +1,51 @@
+<div class="body text-center">
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+        <header class="masthead mb-auto">
+            <div class="inner">
+                <h3 class="masthead-brand">Video Game Trivia</h3>
+            </div>
+        </header>
+        <div id="start">
+            <div class="inner cover" *ngIf="section=='start'">
+                <h1 class="cover-heading">Test your video game knowledge</h1>
+                <p class="lead">From Mario, to Sonic, to Call of Duty, this trivia has a little bit of everything for
+                    avid video game players.</p>
+                <p class="lead">
+                    <a class="btn btn-lg btn-secondary" (click)="startQuiz(quizTitle)">Start Trivia</a>
+                </p>
+            </div>
+        </div>
+        <div id="trivia">
+            <div class="inner cover" *ngIf="section=='trivia'">
+                <div class="space" *ngFor="let q of quiz.questions; index as i">
+                    <h3>{{i+1}}. {{q.question}}</h3>
+                    <div class="row text-left answers">
+                        <div class="col-6" *ngFor="let a of q.answers">
+                            <div class="answer">
+                                <input type="checkbox" [(ngModel)]="a.selected" (change)="selectAnswer(q, a)">
+                                {{a.answer}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="end">
+            <div class="inner cover" *ngIf="section=='end'">
+                <h3>Trivia Results</h3>
+                <div *ngFor="let question of quiz.questions; index as i">
+                    <div>
+                        <h2>{{i+1}}. {{question.question}}</h2>
+                        <div class="row">
+                            
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div *ngIf="section=='trivia'">
+            <button class="btn btn-lg btn-secondary" (click)="submitTrivia()">Submit Answers</button>
+        </div>
+    </div>
+</div>
