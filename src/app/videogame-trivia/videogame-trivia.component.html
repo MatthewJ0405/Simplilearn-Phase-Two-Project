@@ -17,6 +17,7 @@
         </div>
         <div id="trivia">
             <div class="inner cover" *ngIf="section=='trivia'">
+                <button class="btn btn-lg btn-secondary left" (click)="goBack()">Go Back</button>
                 <div class="space" *ngFor="let q of quiz.questions; index as i">
                     <h3>{{i+1}}. {{q.question}}</h3>
                     <div class="row text-left answers">
@@ -32,20 +33,34 @@
         </div>
         <div id="end">
             <div class="inner cover" *ngIf="section=='end'">
+                <button class="btn btn-lg btn-secondary left" (click)="goBack()">Go Back</button>
                 <h3>Trivia Results</h3>
                 <div *ngFor="let question of quiz.questions; index as i">
                     <div>
                         <h2>{{i+1}}. {{question.question}}</h2>
                         <div class="row">
-                            
+                            <div class="col-6" *ngFor="let answer of question.answers">
+                                <div class="end-answer">
+                                    <input type="checkbox" disabled="disabled" [(ngModel)]="answer.selected">
+                                    {{answer.answer}}
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="p-1 m-2 alert {{ checkAnswer(question) == 'correct'? 'alert-success': 'alert-danger' }}">
+                            The answer is {{checkAnswer(question)}}
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
         <div *ngIf="section=='trivia'">
             <button class="btn btn-lg btn-secondary" (click)="submitTrivia()">Submit Answers</button>
         </div>
+        <footer class="mastfoot">
+            <div class="inner">
+                <p><span>Simplilearn</span> Phase Two Project, by <span>Matthew Jackson</span>.</p>
+            </div>
+        </footer>
     </div>
 </div>

@@ -1,19 +1,8 @@
-.answer {
-  background-color: #6d6d6d;
-  font-size: 20px;
-  padding: 10px;
-  margin: 3px;
-}
-
-#trivia .answers input[type=checkbox] {
-  height: 22px;
-  width: 22px;
-}
-
 /* Links */
 a,
 a:focus,
-a:hover {
+a:hover,
+span {
   color: #fff;
 }
 
@@ -111,10 +100,34 @@ a:hover {
 .space {
   margin: 20px;
 }
+.left {
+  position: absolute;
+  top: 70px;
+  left: 350px;
+  width: 200px;
+  padding: 10px;
+}
+.answer {
+  background-color: #6d6d6d;
+  font-size: 20px;
+  padding: 10px;
+  margin: 3px;
+}
+#trivia .answers input[type=checkbox] {
+  height: 22px;
+  width: 22px;
+}
+.end-answer {
+  background-color: #6d6d6d;
+  font-size: 20px;
+  padding: 10px;
+  margin: 3px;
+}
 
 /*
  * Footer
  */
 .mastfoot {
+  margin-top: 50px;
   color: rgba(255, 255, 255, .5);
 }

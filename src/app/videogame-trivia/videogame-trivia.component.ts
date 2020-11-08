@@ -31,11 +31,25 @@ export class VideogameTriviaComponent implements OnInit {
   }
 
   selectAnswer(questions: Questions, answers: Answers) {
+    console.log("In selectAnswer");
     questions.answers.forEach((a) => {
+      console.log(a.selected);
       if (a.id !== answers.id) {
         a.selected = false;
       }
     });
+  }
+
+  checkAnswer(questions: Questions) {
+    console.log(questions.answers.forEach((a) => {
+      console.log(a.selected);
+      //console.log(a.correct);
+    }))
+    return questions.answers.every(a => a.selected === a.correct) ? 'correct' : 'incorrect';
+  }
+
+  goBack() {
+    this.section = 'start';
   }
 
   submitTrivia() {
